@@ -12,9 +12,9 @@ import org.springframework.stereotype.Component;
 @NoArgsConstructor
 public class LoginModel {
 
-    @NotNull(message = "Login Username Can Not Be Null")
+    @NotNull(message = "Login Username Cannot Be Null!")
     private String username;
 
-    @NotNull(message = "Login Password Can Not Be Null")
+    @NotNull(message = "Login Password Cannot Be Null!")
     private String password;
 }
