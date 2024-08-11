@@ -183,7 +183,7 @@ public class AuthService {
 
         /*Check if the email has already been verified*/
         if(authTable.getIsEnabled()){
-            authResponseModel.setMessage("email already verified");
+            authResponseModel.setMessage("Email already verified");
             log.warn("Email Already Verified");
             return ResponseEntity.ok(authResponseModel);
         }
