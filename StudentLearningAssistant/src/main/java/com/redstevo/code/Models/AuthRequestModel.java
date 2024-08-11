@@ -23,6 +23,6 @@ public class AuthRequestModel {
 
     /*This ensures the email entered during registration follow the email pattern*/
     @Email(message = "You Entered An Invalid Email.")
-    @Size(max=100, message = "email is too long")
+    @Size(max=100, message = "Email is too long")
     private String email;
 }
