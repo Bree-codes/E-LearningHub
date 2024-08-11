@@ -61,7 +61,7 @@ public class ExceptionHandling {
                 .setDate(new Date())
                 .setMessage(e)
                 .build();
-        log.info("exception handled.");
+        log.info("Exception handled.");
     }
 
     @ExceptionHandler(EmailNotAvailableException.class)
