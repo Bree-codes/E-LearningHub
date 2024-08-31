@@ -42,8 +42,6 @@ public class LearningController {
 
         return learningService.createCollection(userId, collectionName, createDescriptionFile);
     }
-
-
     /*This End point allows use to fetch created collection from the database and their
     * related topics if any.*/
 
