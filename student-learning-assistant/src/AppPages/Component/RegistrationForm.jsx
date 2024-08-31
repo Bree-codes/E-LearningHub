@@ -35,6 +35,7 @@ const RegistrationForm = () => {
         e.preventDefault();
 
         if(passwordCheck || regError || !emailCheck || !usernameCheck){
+            setRegError("All fields are required.")
             return;
         }
 
@@ -78,11 +79,12 @@ const RegistrationForm = () => {
 
     //check whether the passwords enter by the user match.
     useEffect(() => {
-        if(password !== confirmPassword){
+
+        if(password !== confirmPassword)
             setPasswordCheck("The passwords do not match!!");
-        }else{
+        else
             setPasswordCheck('');
-        }
+
     }, [confirmPassword, password])
 
     //cleans up the backend errors when the user starts to solve them.
