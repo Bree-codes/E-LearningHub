@@ -51,7 +51,7 @@ public class SecurityConfig {
                         .logoutSuccessHandler(
                                 (request, response, authentication) -> SecurityContextHolder.clearContext())
                 );
-        log.info("request passed the security filter chain");
+        log.info("Request passed the security filter chain");
         return httpSecurity.build();
     }
 
